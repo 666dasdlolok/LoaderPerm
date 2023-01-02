@@ -75,6 +75,10 @@ local Button = Tab:CreateButton({
 	elseif game.PlaceId == 6918802270 then
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/PNW/main/Main",true))();
 	wait(1)
+	
+		elseif game.PlaceId == 6461766546 then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/Ahs/main/Main",true))();
+	wait(1)
 
     end
 	end,
