@@ -88,7 +88,7 @@ local Button = Tab:CreateButton({
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/DB/main/Main",true))();
 	wait(1)
 
-	elseif game.PlaceId == 11884594868 then
+	elseif game.PlaceId == 11884594868 or game.PlaceId == 11885022882  then
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/Anime-Defense/main/Main",true))();
 	wait(1)
 
