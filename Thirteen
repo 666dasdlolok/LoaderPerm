@@ -101,7 +101,12 @@ local Label = Tab:CreateLabel("Script is Loading Please Wait.")
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/DBU/main/Main",true))();
 			wait(1)
 
+			elseif game.PlaceId == 10824616460 then
+				loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/Sword-Slashers/main/Main",true))();
+				wait(1)
+
+
 		end
 		wait(1)
 
-
+		
