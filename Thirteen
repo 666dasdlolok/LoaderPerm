@@ -3,35 +3,35 @@ local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/UI-I
 local Window = Rayfield:CreateWindow({
 	Name = "Verny Hub Loader",
 	LoadingTitle = "Verny Hub Loader",
-	LoadingSubtitle = "by VernyFX",
+	LoadingSubtitle = "by Verny",
 	ConfigurationSaving = {
-		Enabled = true,
-		FolderName = nil, -- Create a custom folder for your hub/game
-		FileName = "Big Hub"
+	   Enabled = true,
+	   FolderName = nil, -- Create a custom folder for your hub/game
+	   FileName = "Verny Hub V2"
 	},
-        Discord = {
-        	Enabled = true,
-        	Invite = "dwuSS95ecF", -- The Discord invite code, do not include discord.gg/
-        	RememberJoins = true -- Set this to false to make them join the discord every time they load it up
-        },
+	Discord = {
+	   Enabled = true,
+	   Invite = "dwuSS95ecF", -- The Discord invite code, do not include discord.gg/
+	   RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+	},
 	KeySystem = true, -- Set this to true to use our key system
 	KeySettings = {
-		Title = "Verny Hub",
-		Subtitle = "Key System",
-		Note = "Join the discord (discord.gg/GKGG2Gje)",
-		FileName = "SiriusKey",
-		SaveKey = false,
-		GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-		Key = "jnudfnz43h5nu34hn5uhfn"
+	   Title = "Verny Hub Key",
+	   Subtitle = "Key System",
+	   Note = "Join the discord (discord.gg/dwuSS95ecF)",
+	   FileName = "VernyHubKeyPerm",
+	   SaveKey = true,
+	   GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+	   Key = "jnudfnz43h5nu34hn5uhfn"
 	}
-})
+ })
 
 local Tab = Window:CreateTab("Script Loader", 4483362458) -- Title, Image
 
-local Button = Tab:CreateButton({
-	Name = "Load Script",
-	Interact = "Load It!!!",
-	Callback = function()
+
+local Label = Tab:CreateLabel("Script is Loading Please Wait.")
+
+
         if game.PlaceId == 10598587051 then
             wait(1)
             loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/ACF/main/Four",true))();
@@ -67,36 +67,41 @@ local Button = Tab:CreateButton({
         elseif game.PlaceId == 9498006165 then
             wait(1)
             loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/TS/main/Nine",true))();
-
+	
 		elseif game.PlaceId == 258258996 then
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/MinersHavenEarly/main/Main",true))();
-	wait(1)
-
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/MinersHavenEarly/main/Main",true))();
+		wait(1)
+		
 		elseif game.PlaceId == 6918802270 then
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/PNW/main/Main",true))();
-	wait(1)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/PNW/main/Main",true))();
+		wait(1)
+		
+		elseif game.PlaceId == 6461766546 then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/Ahs/main/Main",true))();
+		wait(1)
 
-	elseif game.PlaceId == 6461766546 then
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/Ahs/main/Main",true))();
-	wait(1)
+		elseif game.PlaceId == 10446125875 then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/AnimeFruitSim/main/Main",true))();
+		wait(1)
 
-	elseif game.PlaceId == 10446125875 then
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/AnimeFruitSim/main/Main",true))();
-	wait(1)
 
-	elseif game.PlaceId == 3177438863 then
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/DB/main/Main",true))();
-	wait(1)
+		elseif game.PlaceId == 3177438863 then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/DB/main/Main",true))();
+		wait(1)
 
-	elseif game.PlaceId == 11884594868 or game.PlaceId == 11885022882  then
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/Anime-Defense/main/Main",true))();
-	wait(1)
+		elseif game.PlaceId == 4934471106 then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/MHM/main/Main",true))();
+		wait(1)
 
-    end
-    wait(1)
-    Rayfield:Destroy()
-end,
-})
+		elseif game.PlaceId == 11884594868 or game.PlaceId == 11885022882 then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/Anime-Defense/main/Main",true))();
+		wait(1)
 
+		elseif game.PlaceId == 3177438863 then
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/DBU/main/Main",true))();
+			wait(1)
+
+		end
+		wait(1)
 
 
