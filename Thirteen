@@ -98,18 +98,20 @@ local Label = Tab:CreateLabel("Script is Loading Please Wait.")
 		wait(1)
 
 		elseif game.PlaceId == 3177438863 then
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/DBU/main/Main",true))();
-			wait(1)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/DBU/main/Main",true))();
+		wait(1)
 
-			elseif game.PlaceId == 10824616460 then
-				loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/Sword-Slashers/main/Main",true))();
-				wait(1)
+		elseif game.PlaceId == 10824616460 then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/Sword-Slashers/main/Main",true))();
+		wait(1)
 
-				elseif game.PlaceId == 11746859781 then
-					loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/BGC/main/Main",true))();
-					wait(1)
+		elseif game.PlaceId == 11746859781 then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/BGC/main/Main",true))();
+		wait(1)
 	
-
+		elseif game.PlaceId == 10925589760 then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/MergeSim/main/Main",true))();
+		wait(1)
 
 		end
 		wait(1)
