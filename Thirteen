@@ -1,3 +1,5 @@
+-- Loader
+
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/UI-Interface/CustomFIeld/main/RayField.lua'))()
 
 local Window = Rayfield:CreateWindow({
@@ -31,89 +33,42 @@ local Tab = Window:CreateTab("Script Loader", 4483362458) -- Title, Image
 
 local Label = Tab:CreateLabel("Script is Loading Please Wait.")
 
+local Games = {
+    [258258996] = "https://raw.githubusercontent.com/666dasdlolok/MinersHavenEarly/main/Main", -- Miners Haven
+    [6918802270] = "https://raw.githubusercontent.com/666dasdlolok/PNW/main/Main", -- Project New World
+    [6461766546] = "https://raw.githubusercontent.com/666dasdlolok/Ahs/main/Main", -- A Hero's Destiny
+    [10446125875] = "https://raw.githubusercontent.com/666dasdlolok/AnimeFruitSim/main/Main", -- Anime Fruit Simulator
+    [3177438863] = "https://raw.githubusercontent.com/666dasdlolok/DB/main/Main", -- Dragon Blox
+    [4934471106] = "https://raw.githubusercontent.com/666dasdlolok/MHM/main/Main", -- My Hero Mania
+    [11884594868] = "https://raw.githubusercontent.com/666dasdlolok/Anime-Defense/main/Main", -- Anime Defense Simulator 
+    [11885022882] = "https://raw.githubusercontent.com/666dasdlolok/Anime-Defense/main/Main", -- Anime Defense Simulator 
+    [3177438863] = "https://raw.githubusercontent.com/666dasdlolok/DBU/main/Main", -- Dragon Blox Ultimate
+    [10824616460] = "https://raw.githubusercontent.com/666dasdlolok/Sword-Slashers/main/Main", -- Sword Slashers
+    [11746859781] = "https://raw.githubusercontent.com/666dasdlolok/BGC/main/Main", -- Bubble Gum Clicker
+    [10925589760] = "https://raw.githubusercontent.com/666dasdlolok/MergeSim/main/Main", -- Merge Simulator
 
-        if game.PlaceId == 10598587051 then
-            wait(1)
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/ACF/main/Four",true))();
+}
 
-        elseif game.PlaceId == 2629642516 then
-            wait(1)
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/BTC/main/Three",true))();
-
-        elseif game.PlaceId == 9170761016 then
-            wait(1)
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/Magic/main/Two",true))();
-
-        elseif game.PlaceId == 11445923563 then
-            wait(1)
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/OFS/main/One",true))();
-
-        elseif game.PlaceId == 8540346411 then
-            wait(1)
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/RCX/main/Five",true))();
-
-        elseif game.PlaceId == 11162791099 then
-            wait(1)
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/sandbox/main/Six",true))();
-
-        elseif game.PlaceId ==  6875469709 then 
-            wait(1)
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/strongest/main/Seven",true))();
-
-        elseif game.PlaceId == 8750997647 then
-            wait(1)
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/TSX/main/Eight",true))();
-
-        elseif game.PlaceId == 9498006165 then
-            wait(1)
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/TS/main/Nine",true))();
-	
-		elseif game.PlaceId == 258258996 then
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/MinersHavenEarly/main/Main",true))();
-		wait(1)
-		
-		elseif game.PlaceId == 6918802270 then
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/PNW/main/Main",true))();
-		wait(1)
-		
-		elseif game.PlaceId == 6461766546 then
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/Ahs/main/Main",true))();
-		wait(1)
-
-		elseif game.PlaceId == 10446125875 then
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/AnimeFruitSim/main/Main",true))();
-		wait(1)
-
-
-		elseif game.PlaceId == 3177438863 then
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/DB/main/Main",true))();
-		wait(1)
-
-		elseif game.PlaceId == 4934471106 then
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/MHM/main/Main",true))();
-		wait(1)
-
-		elseif game.PlaceId == 11884594868 or game.PlaceId == 11885022882 then
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/Anime-Defense/main/Main",true))();
-		wait(1)
-
-		elseif game.PlaceId == 3177438863 then
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/DBU/main/Main",true))();
-		wait(1)
-
-		elseif game.PlaceId == 10824616460 then
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/Sword-Slashers/main/Main",true))();
-		wait(1)
-
-		elseif game.PlaceId == 11746859781 then
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/BGC/main/Main",true))();
-		wait(1)
-	
-		elseif game.PlaceId == 10925589760 then
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/MergeSim/main/Main",true))();
-		wait(1)
-
-		end
-		wait(1)
+if Games[game.PlaceId] then
+    loadstring(game:HttpGet(Games[game.PlaceId]))()
+else
+    Rayfield:Notify({
+        Title = "Verny Hub",
+        Content = "Game is Not Supported!",
+        Duration = 6.5,
+        Image = 4483362458,
+        Actions = { -- Notification Buttons
+            Ignore = {
+                Name = "Okay!",
+                Callback = function()
+                    print("The user tapped Okay!")
+                end
+            },
+        },
+    })
+end
 
 		
+
+
+
