@@ -46,6 +46,7 @@ local Games = {
     [10824616460] = "https://raw.githubusercontent.com/666dasdlolok/Sword-Slashers/main/Main", -- Sword Slashers
     [11746859781] = "https://raw.githubusercontent.com/666dasdlolok/BGC/main/Main", -- Bubble Gum Clicker
     [10925589760] = "https://raw.githubusercontent.com/666dasdlolok/MergeSim/main/Main", -- Merge Simulator
+    [11542692507] = "https://raw.githubusercontent.com/666dasdlolok/AnimeSoul/main/Main", -- Anime Soul Simulator
 
 }
 
