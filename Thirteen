@@ -48,8 +48,8 @@ local Games = {
     [11746859781] = "https://raw.githubusercontent.com/666dasdlolok/BGC/main/Main", -- Bubble Gum Clicker
     [10925589760] = "https://raw.githubusercontent.com/666dasdlolok/MergeSim/main/Main", -- Merge Simulator
     [11542692507] = "https://raw.githubusercontent.com/666dasdlolok/AnimeSoul/main/Main", -- Anime Soul Simulator
-    [11430505281] = "https://raw.githubusercontent.com/666dasdlolok/Anime-Weapon/main/Main" -- Anime Weapon Simulator
-    [9380307595] = "https://raw.githubusercontent.com/666dasdlolok/PixelPieceTest/main/Main" -- Pixel Piece
+    [11430505281] = "https://raw.githubusercontent.com/666dasdlolok/Anime-Weapon/main/Main", -- Anime Weapon Simulator
+    [9380307595] = "https://raw.githubusercontent.com/666dasdlolok/PixelPieceTest/main/Main", -- Pixel Piece
 
 }
 
